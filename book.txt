@@ -1,0 +1,175 @@
+Comprehensive Guide to Git, GitHub, and Linux Commands
+
+1. Introduction
+
+Git and GitHub are essential tools for version control and collaborative development. Linux, as a command-line-driven
+operating system, enhances efficiency when working with Git. This guide provides a structured approach to using Git,
+GitHub, and Linux commands effectively.
+
+2. Understanding Git and GitHub
+
+What is Git?
+
+Git is a distributed version control system that allows developers to track changes in code, collaborate, and manage projects
+efficiently.
+
+What is GitHub?
+
+GitHub is a cloud-based platform that hosts Git repositories and enables collaboration through pull requests, issue tracking,
+and continuous integration.
+
+3. Git Basic Commands
+
+Setting Up Git
+# Configure user details
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+Initializing a Git Repository
+# Initialize a new repository
+git init
+
+Cloning a Repository
+# Clone an existing repository from GitHub
+git clone https://github.com/username/repository.git
+
+Adding and Committing Changes
+# Add all changes to staging
+git add .
+
+# Commit the changes with a message
+git commit -m "Initial commit"
+
+4. Step-by-Step Guide: Pull, Push, and Branching
+
+Pulling the Latest Changes
+# Fetch and merge changes from the remote repository
+git pull origin main
+
+Pushing Changes to GitHub
+# Push local commits to the remote repository
+git push origin main
+
+Creating a New Branch
+# Create a new branch
+git branch feature-branch
+
+# Switch to the new branch
+git checkout feature-branch
+
+Merging Branches
+# Switch to the main branch
+git checkout main
+
+# Merge feature-branch into main
+git merge feature-branch
+
+Deleting a Branch
+# Delete a branch after merging
+git branch -d feature-branch
+
+
+5. Linux Commands Overview
+
+Navigating the Filesystem
+# List files in a directory
+ls
+
+# Change directory
+cd directory_name
+
+# Go back to the previous directory
+cd ..
+
+Creating and Managing Files
+# Create a new directory
+mkdir my_directory
+
+# Create a new file
+touch my_file.txt
+
+Editing Files
+# Open a file in Nano editor
+nano my_file.txt
+
+# Save changes in Nano
+CTRL + X, then Y, then ENTER
+
+Renaming and Deleting Files
+# Rename a file
+mv old_name.txt new_name.txt
+
+# Remove a file
+rm file.txt
+
+6. Step-by-Step Linux File Management
+
+Step 1: Create a Directory and a File
+mkdir project_directory
+cd project_directory
+touch main.py
+
+Step 2: Edit the File
+nano main.py
+
+(Add some content and save the file)
+
+Step 3: Move and Copy Files
+mv main.py scripts/
+cp scripts/main.py backup/
+
+Step 4: Delete Files and Directories
+rm backup/main.py
+rmdir backup
+
+chmod (Change File Permissions)
+The chmod command is used to change file permissions in Linux.
+
+Syntax:
+chmod [permissions] [file]
+Examples:
+
+Grant execute permission to a file:
+chmod +x script.sh
+Give read (r), write (w), and 
+
+execute (x) permissions to the owner:
+chmod u+rwx file.txt
+Set specific numeric permissions (e.g., 755):
+
+
+chmod 755 script.sh
+7 (Owner: Read, Write, Execute)
+5 (Group: Read, Execute)
+5 (Others: Read, Execute)
+
+The sudo apt-get command is used in Debian-based Linux distributions to install, update, upgrade, and remove software packages,
+managing system dependencies efficiently.
+
+Apply permissions to all files in a directory:
+chmod -R 644 /path/to/directory
+apt (Advanced Package Tool)
+The apt command is used for managing packages in Debian-based distributions like Ubuntu.
+
+Common Commands:
+Update package list:
+sudo apt update
+
+Upgrade installed packages:
+sudo apt upgrade
+
+Install a new package:
+sudo apt install package_name
+
+Remove an installed package:
+sudo apt remove package_name
+
+Search for a package:
+apt search package_name
+
+Show details of a package:
+apt show package_name
+
+Clear package cache:
+sudo apt clean
+
